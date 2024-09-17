@@ -1,22 +1,129 @@
-body,main{
+nav {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
 }
 
-body{
+ul li {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+}
+
+li:hover {
+  background-color: #1e1d1d;
+}
+
+article h1 {
+  font-size: 40px;
+  color: #3a588a;
+}
+
+article h2 {
+  text-align: center;
+  color: #b3bcd6;
+}
+
+article div h2 {
+  text-align: start;
+  color: #3a588a;
+}
+
+p {
+  font-size: 19px;
+  color: #909090;
+}
+article img {
+  width: 75%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.descripe {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+.descripe h2 {
+  margin: 0;
+}
+.descripe p {
+  margin: 0;
+}
+
+body,
+main {
+  display: flex;
+  margin-top: 50px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
-main{
+main {
   flex-direction: row;
   flex: auto;
 }
 
-article{
+article {
   flex: 2;
   overflow-y: auto;
 }
 
-aside{
-  flex:1;
+aside {
+  flex: 1;
   overflow-y: auto;
+  padding: 30px;
+  color: rgb(116, 116, 176);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+}
+
+footer a {
+  order: 1;
+  padding: 15px;
+}
+footer p {
+  order: 2;
+  padding: 10px;
+}
+
+footer a img {
+  width: 40px;
 }
