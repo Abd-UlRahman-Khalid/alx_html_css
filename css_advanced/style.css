@@ -1,3 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(assets/Object.png);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  color: white;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
   color: #fff;
+  text-transform: uppercase;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  background: #c271ff;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+nav ul li:hover:after {
+  width: 100%;
+}
+
+.banner-section {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+.banner-section > .content h1 {
+  font-size: 70px;
+  margin-top: 100px;
+}
+
+.banner-section > .content span {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+}
+
+.banner-section > .content button {
+  background-color: #c271ff;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.banner-section > .pros {
+  margin-top: 150px;
+}
+.banner-section > .pros > h2 {
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.banner-section > .pros > h2::before {
+  content: "Learn";
+  font-weight: bold;
+  color: #c271ff;
+}
+
+.banner-section > .pros > .speakers {
+  display: flex;
+  padding: 50px;
+  justify-content: space-evenly;
+}
+
+.banner-section > .pros > .speakers > .speaker img {
+  margin: 20px;
+}
+
+main > .quote-section {
+  width: 100%;
+  background-color: #c271ff;
+  height: 50vh;
+}
+
+main > .quote-section {
+  width: 100%;
+  color: white;
+  background-color: #c271ff;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main > .quote-section > div {
+  padding: 10px;
+}
+
+main > .video-section {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+}
+
+main > .video-section > h2 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: #c271ff;
+  font-weight: lighter;
+}
+main > .video-section > .videos-block {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.video {
+  width: 200px;
+  text-align: left;
+}
+
+.video > img {
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.author {
+  margin-top: 20px;
+}
+.author img,
+h4 {
+  display: inline-block;
+  margin: 0;
+  padding: 0 5px;
+}
+.author div {
+  margin-top: 5px;
+  display: flex;
+  justify-content: left;
+}
+.author p {
+  text-align: right;
 }
